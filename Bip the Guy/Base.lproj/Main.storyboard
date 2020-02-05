@@ -2,7 +2,6 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_0" orientation="portrait" appearance="light"/>
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -23,8 +22,8 @@
                                     <outletCollection property="gestureRecognizers" destination="XkO-pD-npU" appends="YES" id="wEs-vC-krN"/>
                                 </connections>
                             </imageView>
-                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="Hlb-Vv-Otu">
-                                <rect key="frame" x="61" y="464" width="198" height="30"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="Hlb-Vv-Otu">
+                                <rect key="frame" x="61.5" y="443.5" width="198" height="30"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X4E-SY-vf1">
                                         <rect key="frame" x="0.0" y="0.0" width="92" height="30"/>
@@ -42,8 +41,8 @@
                                     </button>
                                 </subviews>
                             </stackView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Choose image to punch" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lHY-Mo-tgC">
-                                <rect key="frame" x="68" y="408" width="181.5" height="20.5"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Choose image to punch" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lHY-Mo-tgC">
+                                <rect key="frame" x="69.5" y="415" width="181.5" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -51,14 +50,19 @@
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="lHY-Mo-tgC" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="362" id="7qQ-zb-OnD"/>
+                            <constraint firstItem="lHY-Mo-tgC" firstAttribute="top" secondItem="uxr-1G-men" secondAttribute="bottom" constant="8" id="0jl-t1-YQL"/>
+                            <constraint firstItem="Hlb-Vv-Otu" firstAttribute="top" secondItem="lHY-Mo-tgC" secondAttribute="bottom" constant="27" id="9sB-D4-7Vl"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Hlb-Vv-Otu" secondAttribute="trailing" constant="60.5" id="IMN-0E-ubR"/>
                             <constraint firstItem="uxr-1G-men" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="-58" id="JXt-0g-tmM"/>
-                            <constraint firstItem="uxr-1G-men" firstAttribute="centerX" secondItem="lHY-Mo-tgC" secondAttribute="centerX" id="SGn-BE-Q8F"/>
+                            <constraint firstItem="lHY-Mo-tgC" firstAttribute="top" secondItem="uxr-1G-men" secondAttribute="bottom" constant="15" id="LXe-tH-dAO"/>
                             <constraint firstItem="Hlb-Vv-Otu" firstAttribute="top" secondItem="lHY-Mo-tgC" secondAttribute="bottom" constant="8" id="WNC-tO-tt6"/>
+                            <constraint firstItem="lHY-Mo-tgC" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="69.25" id="a4a-Hl-THK"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="uxr-1G-men" secondAttribute="bottom" constant="168" id="gfV-dj-lE3"/>
                             <constraint firstItem="lHY-Mo-tgC" firstAttribute="centerX" secondItem="Hlb-Vv-Otu" secondAttribute="centerX" id="huf-RW-wUL"/>
                             <constraint firstItem="uxr-1G-men" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="lu6-Ub-E8P"/>
+                            <constraint firstItem="Hlb-Vv-Otu" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="61.5" id="mSP-5i-1aU"/>
                             <constraint firstItem="uxr-1G-men" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="upW-ir-Rv9"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="lHY-Mo-tgC" secondAttribute="trailing" constant="69.25" id="yYQ-x0-tmr"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
